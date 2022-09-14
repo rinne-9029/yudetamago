@@ -1,6 +1,11 @@
 iohrpih山田　稜真.txt
 agrfaaf富川　廉.txt
 asdhgjdsahlkas　中田　琉聖.txt
+<<<<<<< HEAD
 
 
 
+=======
+afafagfgagaajga
+porgjpoerjpohjpothpojaot
+>>>>>>> 3ba36aa6146b5281e2def0fbe2634c9b9dde0153
