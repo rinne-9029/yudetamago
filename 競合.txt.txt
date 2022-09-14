@@ -2,6 +2,7 @@ iohrpih山田　稜真.txt
 agrfaaf富川　廉.txt
 asdhgjdsahlkas　中田　琉聖.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -9,3 +10,7 @@ asdhgjdsahlkas　中田　琉聖.txt
 afafagfgagaajga
 porgjpoerjpohjpothpojaot
 >>>>>>> 3ba36aa6146b5281e2def0fbe2634c9b9dde0153
+=======
+gyt
+porgjpoerjpohjpothpojaot
+>>>>>>> 695c0c5ad144973615d90a6477eb77f0ce13eb21
