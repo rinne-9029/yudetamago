@@ -68,9 +68,9 @@ void Init(void)
 	//ÉQÅ[ÉÄãNìÆéûÇ…àÍìxÇæÇØåƒÇŒÇÍÇÈ
 	//-----------------------------------------------------
 	ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 120, 80));
-	//ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
-	//ADD_RESOURCE("Town", CImage::CreateImage("Image/Town.png"));
-	//ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
+	ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
+	ADD_RESOURCE("Town", CImage::CreateImage("Image/Town.png"));
+	ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
 	ADD_RESOURCE("Trap",CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 	Base::Add(new Player(CVector2D(200,500),false));
