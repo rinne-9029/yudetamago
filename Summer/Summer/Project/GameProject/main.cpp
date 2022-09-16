@@ -7,6 +7,7 @@
 #include"Game/Player.h"
 #include"Game/Field.h"
 #include"Base/Base.h"
+#include"Game/Trap.h"
 
 
 
@@ -70,10 +71,11 @@ void Init(void)
 	//ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
 	//ADD_RESOURCE("Town", CImage::CreateImage("Image/Town.png"));
 	//ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
+	ADD_RESOURCE("Trap",CImage::CreateImage("Image/trap.png"));
 
 	Base::Add(new Player(CVector2D(200,500),false));
 
-
+	Base::Add(new Trap(CVector2D(200, 500)));
 
 }
 
