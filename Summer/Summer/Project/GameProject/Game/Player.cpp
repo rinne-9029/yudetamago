@@ -63,25 +63,21 @@ Player::Player(const CVector2D& p, bool flip) :
 	}
 
 	//攻撃
-	if (PUSH(CInput::eButton1)) {
-		//攻撃状態へ移行
-
-	//攻撃
-		if (PUSH(CInput::eButton1)) {
+		/*if (PUSH(CInput::eButton1)) {
 			//攻撃状態へ移行
 			m_state = eState_Attack;
 			m_attack_no++;
-		}
+		}*/
 
-	}//ジャンプ中なら
-	if (!m_is_ground) {
+	//ジャンプ中なら
+	/*if (!m_is_ground) {
 		if (m_vec.y < 0)
 			//上昇アニメーション
 			m_img.ChangeAnimation(eAnimJumpUp, false);
 		else
 			//下降アニメーション
 			m_img.ChangeAnimation(eAnimJumpDown, false);
-	}
+	}*/
 	//移動中なら
 	else
 	{
@@ -156,8 +152,8 @@ void Player::Update() {
 	if (m_is_ground && m_vec.y > GRAVITY * 4)
 		m_is_ground = false;
 	//重力による落下
-	/*m_vec.y += GRAVITY;
-	m_pos += m_vec;*/
+	m_vec.y += GRAVITY;
+	m_pos += m_vec;
 
 
 	//アニメーション更新
@@ -181,7 +177,7 @@ void Player::Draw() {
 }
 void Player::Collision(Base* b)
  {
-	/*switch (b->m_type) {
+	switch (b->m_type) {
 		//ゴール判定
 	case eType_Goal:
 		if (Base::CollisionRect(this, b)) {
@@ -225,7 +221,7 @@ void Player::Collision(Base* b)
 		}
 		break;
 	}
-*/
+
 }
 
 
