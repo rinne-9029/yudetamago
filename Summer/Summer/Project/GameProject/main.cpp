@@ -3,6 +3,11 @@
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
 
+#include"Game/AnimData.h"
+#include"Game/Player.h"
+#include"Game/Field.h"
+#include"Base/Base.h"
+
 
 
 
@@ -18,7 +23,10 @@ void MainLoop(void) {
 	//ゲーム中の動きはここに書く
 	//ゲーム中はこの関数_を1秒間に60回呼び出している
 	//--------------------------------------------------------------
-
+	Base::CheckKillAll();
+	Base::UpdateAll();
+	Base::CollisionAll();
+	Base::DrawAll();
 
 
 
@@ -47,7 +55,7 @@ void Init(void)
 	//	CInput::SetMouseInside(true);
 	//	CInput::ShowCursor(false);
 	CInput::Update();
-	CInput::Update();
+	//CInput::Update();
 
 
 
@@ -58,10 +66,12 @@ void Init(void)
 	//初期化の命令を書く
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
-	
+	ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png", player_anim_data, 120, 80));
+	//ADD_RESOURCE("ForeGround", CImage::CreateImage("Image/ForeGround.png"));
+	//ADD_RESOURCE("Town", CImage::CreateImage("Image/Town.png"));
+	//ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
 
-
-
+	Base::Add(new Player(CVector2D(200,500),false));
 
 
 

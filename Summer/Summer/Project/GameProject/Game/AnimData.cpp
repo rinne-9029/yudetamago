@@ -1,7 +1,7 @@
 #include "AnimData.h"
 
 
-static TexAnim playerIdle[] = {
+/*static TexAnim playerIdle[] = {
 	{ 0,2 },
 	{ 1,2 },
 	{ 2,2 },
@@ -17,25 +17,20 @@ static TexAnim playerIdle[] = {
 	{ 12,2 },
 	{ 13,2 },
 	{ 14,2 },
-};
+};*/
 static TexAnim playerRun[] = {
-	{ 16,2 },
-	{ 17,2 },
-	{ 18,2 },
-	{ 19,2 },
-	{ 20,2 },
-	{ 21,2 },
-	{ 22,2 },
-	{ 23,2 },
-	{ 24,2 },
-	{ 25,2 },
-	{ 26,2 },
-	{ 27,2 },
-	{ 28,2 },
-	{ 29,2 },
-	{ 30,2 },
+	{ 10,3 },
+	{ 11,3 },
+	{ 12,3 },
+	{ 13,3 },
+	{ 14,3 },
+	{ 15,3 },
+	{ 16,3 },
+	{ 17,3 },
+	{ 18,3 },
+	{ 19,3 },
 };
-static TexAnim playerJumpUp[] = {
+/*static TexAnim playerJumpUp[] = {
 	{ 32,4 },
 	{ 33,4 },
 	{ 34,4 },
@@ -55,7 +50,7 @@ static TexAnim playerAttack01[] = {
 	{ 44,2 },
 	{ 45,3 },
 	{ 46,4 },
-};
+};*/
 static TexAnim playerAttack01End[] = {
 	{ 48,4 },
 	{ 49,4 },
@@ -109,14 +104,17 @@ static TexAnim playerDamageEnd[] = {
 	{ 95,2 },
 };
 static TexAnim playerDeath[] = {
-	{ 96,4 },
-	{ 97,4 },
-	{ 98,8 },
-	{ 99,4 },
-	{ 100,4 },
-	{ 101,4 },
-	{ 102,4 },
-	{ 103,4 },
+	{ 30,4 },
+	{ 31,4 },
+	{ 32,4 },
+	{ 33,4 },
+	{ 34,4 },
+	{ 35,4 },
+	{ 36,4 },
+	{ 37,4 },
+	{ 38,4 },
+	{ 39,4 },
+
 };
 
 static TexAnim playerDown[] = {
@@ -197,11 +195,11 @@ static TexAnim playerStep[] = {
 	{ 122,4 },
 };
 TexAnimData player_anim_data[] = {
-	ANIMDATA(playerIdle),
+	//ANIMDATA(playerIdle),
 	ANIMDATA(playerRun),
-	ANIMDATA(playerJumpUp),
-	ANIMDATA(playerJumpDown),
-	ANIMDATA(playerAttack01),
+	//ANIMDATA(playerJumpUp),
+	//ANIMDATA(playerJumpDown),
+	//ANIMDATA(playerAttack01),
 	ANIMDATA(playerAttack01End),
 	ANIMDATA(playerAttack02),
 	ANIMDATA(playerAttack02End),

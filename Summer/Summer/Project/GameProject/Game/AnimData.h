@@ -3,8 +3,8 @@
 
 //!アニメーションの種類
 enum  {
-	eAnimIdle = 0,
-	eAnimRun,
+	eAnimIdle, 
+	eAnimRun = 0,
 	eAnimJumpUp,
 	eAnimJumpDown,
 	eAnimAttack01,

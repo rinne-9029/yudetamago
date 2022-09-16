@@ -9,10 +9,14 @@ Player::Player(const CVector2D& p, bool flip) :
 	m_img = COPY_RESOURCE("Player", CImage);
 	//再生アニメーション設定
 	m_img.ChangeAnimation(0);
+	//キャラの大きさ
+	m_img.SetSize(300, 200);
 	//座標設定
 	m_pos = p;
 	//中心位置設定
-	m_img.SetCenter(128, 224);
+	m_img.SetCenter(150, 200);
+	//矩形当たり判定
+	m_rect = CRect(-150, -200, 150, 0);
 	//反転フラグ
 	m_flip = flip;
 	//通常状態へ
@@ -152,8 +156,8 @@ void Player::Update() {
 	if (m_is_ground && m_vec.y > GRAVITY * 4)
 		m_is_ground = false;
 	//重力による落下
-	m_vec.y += GRAVITY;
-	m_pos += m_vec;
+	/*m_vec.y += GRAVITY;
+	m_pos += m_vec;*/
 
 
 	//アニメーション更新
@@ -161,6 +165,7 @@ void Player::Update() {
 
 	//スクロール設定
 	m_scroll.x = m_pos.x - 1280 / 2;
+	
 
 }
 
@@ -171,10 +176,12 @@ void Player::Draw() {
 	m_img.SetFlipH(m_flip);
 	//描画
 	m_img.Draw();
+	//当たり判定矩形の表示
+	DrawRect();
 }
 void Player::Collision(Base* b)
-{
-	switch (b->m_type) {
+ {
+	/*switch (b->m_type) {
 		//ゴール判定
 	case eType_Goal:
 		if (Base::CollisionRect(this, b)) {
@@ -218,7 +225,7 @@ void Player::Collision(Base* b)
 		}
 		break;
 	}
-
+*/
 }
 
 
