@@ -8,6 +8,7 @@
 #include"Game/Field.h"
 #include"Base/Base.h"
 #include"Game/Trap.h"
+#include"Game/Game.h"
 #include"Title/title.h"
 
 
@@ -73,7 +74,8 @@ void Init(void)
 	ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
 	ADD_RESOURCE("Trap",CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
-	Base::Add(new Player(CVector2D(200,500),false));
+	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
+	//Base::Add(new Player(CVector2D(200,500),false));
 
 	Base::Add(new Trap(CVector2D(200, 500)));
 
