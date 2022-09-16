@@ -75,7 +75,7 @@ void Init(void)
 	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 	Base::Add(new Player(CVector2D(200,500),false));
 
-	Base::Add(new Trap(CVector2D(200, 500)));
+	Base::Add(new Trap(CVector2D(400, 500)));
 
 	Base::Add(new Title());
 }
