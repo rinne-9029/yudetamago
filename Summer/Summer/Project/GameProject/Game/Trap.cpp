@@ -23,7 +23,7 @@ void Trap::Draw(){
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.Draw();
 	//当たり判定矩形の表示
-	//DrawRect();
+	DrawRect();
 
 }
 
@@ -50,7 +50,7 @@ void Trap2::Draw(){
 	m_img.SetPos(GetScreenPos(m_pos));
 	m_img.Draw();
 	//当たり判定矩形の表示
-	//DrawRect();
+	DrawRect();
 }
 
 void Trap2::Collision(Base* b){
