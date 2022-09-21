@@ -50,7 +50,7 @@ static TexAnim playerAttack01[] = {
 	{ 44,2 },
 	{ 45,3 },
 	{ 46,4 },
-};*/
+};
 static TexAnim playerAttack01End[] = {
 	{ 48,4 },
 	{ 49,4 },
@@ -102,7 +102,7 @@ static TexAnim playerDamageEnd[] = {
 	{ 93,2 },
 	{ 94,2 },
 	{ 95,2 },
-};
+};*/
 static TexAnim playerDeath[] = {
 	{ 30,4 },
 	{ 31,4 },
@@ -200,13 +200,13 @@ TexAnimData player_anim_data[] = {
 	//ANIMDATA(playerJumpUp),
 	//ANIMDATA(playerJumpDown),
 	//ANIMDATA(playerAttack01),
-	ANIMDATA(playerAttack01End),
-	ANIMDATA(playerAttack02),
-	ANIMDATA(playerAttack02End),
-	ANIMDATA(playerAttack03),
-	ANIMDATA(playerAttack03End),
-	ANIMDATA(playerDamage),
-	ANIMDATA(playerDamageEnd),
+	//ANIMDATA(playerAttack01End),
+	//ANIMDATA(playerAttack02),
+	//ANIMDATA(playerAttack02End),
+	//ANIMDATA(playerAttack03),
+	//ANIMDATA(playerAttack03End),
+	//ANIMDATA(playerDamage),
+	//ANIMDATA(playerDamageEnd),
 	ANIMDATA(playerDeath),
 	ANIMDATA(playerDown),
 	ANIMDATA(playerDownGround),

@@ -15,12 +15,12 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new Enemy(CVector2D(1280 + 256 * 2, 540), true));
 	//Base::Add(new Enemy(CVector2D(1280 + 256 * 3, 540), true));
 	Base::Add(new Goal(CVector2D(2048, 540)));
+	Base::Add(new Trap(CVector2D(400, 540),true));
+	Base::Add(new Trap(CVector2D(420, 540),true));
+	Base::Add(new Trap(CVector2D(500, 540),true));
+	Base::Add(new Trap(CVector2D(520, 540),true));
+	Base::Add(new Trap(CVector2D(540, 540),true));
 	Base::Add(new UI());
-	Base::Add(new Trap(CVector2D(400, 540)));
-	Base::Add(new Trap(CVector2D(420, 540)));
-	Base::Add(new Trap(CVector2D(500, 540)));
-	Base::Add(new Trap(CVector2D(520, 540)));
-	Base::Add(new Trap(CVector2D(540, 540)));
 
 }
 
