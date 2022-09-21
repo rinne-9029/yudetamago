@@ -5,7 +5,6 @@
 #include "Goal.h"
 #include "../Title/Title.h"
 #include"Trap.h"
-#include "UI.h"
 
 Game::Game() :Base(eType_Scene)
 {
@@ -20,7 +19,6 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Trap(CVector2D(500, 540),true));
 	Base::Add(new Trap(CVector2D(520, 540),true));
 	Base::Add(new Trap(CVector2D(540, 540),true));
-	Base::Add(new UI());
 
 }
 
