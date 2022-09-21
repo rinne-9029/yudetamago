@@ -28,7 +28,7 @@ Player::Player(const CVector2D& p, bool flip) :
 	m_attack_no = rand();
 	//ダメージ番号
 	m_damage_no = -1;
-	//
+	//ヒットポイント
 	m_hp = 100;
 
 
@@ -71,14 +71,14 @@ Player::Player(const CVector2D& p, bool flip) :
 		}*/
 
 	//ジャンプ中なら
-	/*if (!m_is_ground) {
+	if (!m_is_ground) {
 		if (m_vec.y < 0)
 			//上昇アニメーション
 			m_img.ChangeAnimation(eAnimJumpUp, false);
 		else
 			//下降アニメーション
 			m_img.ChangeAnimation(eAnimJumpDown, false);
-	}*/
+	}
 	//移動中なら
 	else
 	{

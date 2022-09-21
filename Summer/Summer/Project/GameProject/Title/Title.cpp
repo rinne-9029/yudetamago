@@ -24,6 +24,8 @@ void Title::Draw()
 {
 	m_img.Draw();
 	//文字表示
-	m_title_text.Draw(64, 256, 0, 0, 0, "Title");
-	m_title_text.Draw(64, 512, 0, 0, 0, "Push Z");
+	m_title_text.Draw(580, 156, 0, 0, 0, "Title");
+	m_title_text.Draw(900, 700, 0, 0, 0, "スタート Z");
+	m_title_text.Draw(64, 300, 0, 0, 0, "操作方法");
+	m_title_text.Draw(64, 450, 0, 0, 0, "ジャンプ  X");
 }
