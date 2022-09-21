@@ -19,6 +19,9 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Trap(CVector2D(500, 540),true));
 	Base::Add(new Trap(CVector2D(520, 540),true));
 	Base::Add(new Trap(CVector2D(540, 540),true));
+	Base::Add(new Trap2(CVector2D(300, 450), true));
+	Base::Add(new Trap2(CVector2D(520, 450), true));
+	Base::Add(new Trap2(CVector2D(600, 480), true));
 
 }
 
