@@ -17,10 +17,12 @@
     <ClCompile Include="Game\Enemy.cpp" />
     <ClCompile Include="Game\Field.cpp" />
     <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameData.cpp" />
     <ClCompile Include="Game\Goal.cpp" />
     <ClCompile Include="Game\Player.cpp" />
     <ClCompile Include="Game\Slash.cpp" />
     <ClCompile Include="Game\Trap.cpp" />
+    <ClCompile Include="Game\UI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Title\Title.cpp" />
   </ItemGroup>
@@ -31,10 +33,12 @@
     <ClInclude Include="Game\Enemy.h" />
     <ClInclude Include="Game\Field.h" />
     <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\GameData.h" />
     <ClInclude Include="Game\Goal.h" />
     <ClInclude Include="Game\Player.h" />
     <ClInclude Include="Game\Slash.h" />
     <ClInclude Include="Game\Trap.h" />
+    <ClInclude Include="Game\UI.h" />
     <ClInclude Include="Title\Title.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
