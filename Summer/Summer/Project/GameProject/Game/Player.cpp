@@ -195,6 +195,18 @@ void Player::Collision(Base* b)
 			}
 			break;
 		}
+	case eType_Trap2:
+		if (Trap2* s = dynamic_cast<Trap2*>(b)) {
+			if (m_damage_no != s->GetAttackNo() && Base::CollisionRect(this, s)) {
+				m_damage_no = s->GetAttackNo();
+				m_hp -= 100;
+			}
+			if (m_hp <= 0) {
+				m_state = eState_Down;
+			}
+			break;
+		}
+
 		//攻撃エフェクトとの判定
 	case eType_Enemy_Attack:
 		//Slash型へキャスト、型変換できたら
@@ -231,8 +243,8 @@ void Player::Collision(Base* b)
 			}
 		}
 		break;
-	}
-
+		}
+	
 }
 
 
