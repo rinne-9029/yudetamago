@@ -3,6 +3,7 @@
 #include "Field.h"
 #include "Slash.h"
 #include "Effect.h"
+#include "Trap.h"
 Player::Player(const CVector2D& p, bool flip) :
 	Base(eType_Player) {
 	//画像複製
@@ -124,7 +125,7 @@ void Player::StateDamage()
 }
 void Player::StateDown()
 {
-	m_img.ChangeAnimation(eAnimDown, false);
+	m_img.ChangeAnimation(eAnimDeath, false);
 	if (m_img.CheckAnimationEnd()) {
 		m_kill = true;
 	}
@@ -154,8 +155,6 @@ void Player::Update() {
 	//重力による落下
 	m_vec.y += GRAVITY;
 	m_pos += m_vec;
-
-
 	//アニメーション更新
 	m_img.UpdateAnimation();
 
@@ -184,6 +183,18 @@ void Player::Collision(Base* b)
 			SetKill();
 		}
 		break;
+		//トラップに当たった処理
+	case  eType_Trap:
+		if (Trap* s = dynamic_cast<Trap*>(b)) {
+			if (m_damage_no != s->GetAttackNo() && Base::CollisionRect(this, s)) {
+				m_damage_no = s->GetAttackNo();
+				m_hp -= 100;
+			}
+			if (m_hp <= 0) {
+				m_state = eState_Down;
+			}
+			break;
+		}
 		//攻撃エフェクトとの判定
 	case eType_Enemy_Attack:
 		//Slash型へキャスト、型変換できたら

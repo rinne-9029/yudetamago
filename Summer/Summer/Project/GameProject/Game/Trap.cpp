@@ -2,13 +2,15 @@
 #include"Game.h"
 
 
-Trap::Trap(const CVector2D& pos):Base(eType_Trap) {
+Trap::Trap(const CVector2D& pos,int attack_no):Base(eType_Trap) {
 	m_img = COPY_RESOURCE("Trap", CImage);
 	m_pos = pos;
 	//’†S‚ğİ’è
 	m_img.SetCenter(16, 16);
 	//“–‚½‚è”»’è—p‹éŒ`İ’è
 	m_rect = CRect(-15, -10, 1, 0);
+	//UŒ‚”Ô†
+	m_attack_no = attack_no;
 
 }
 
