@@ -24,8 +24,10 @@ void Title::Draw()
 {
 	m_img.Draw();
 	//文字表示
-	m_title_text.Draw(580, 156, 0, 0, 0, "Title");
+	m_title_text.Draw(380, 100, 0, 0, 0, "ゆでたまごの冒険");
 	m_title_text.Draw(900, 700, 0, 0, 0, "スタート Z");
-	m_title_text.Draw(64, 300, 0, 0, 0, "操作方法");
-	m_title_text.Draw(64, 450, 0, 0, 0, "ジャンプ  X");
+	m_title_text.Draw(650, 600, 0, 0, 0, "操作方法");
+	m_title_text.Draw(500, 700, 0, 0, 0, "ジャンプ  X");
+	m_title_text.Draw(600, 250, 0, 0, 0, "罠を避けながら");
+	m_title_text.Draw(700, 310, 0, 0, 0, "ゴールを目指せ！");
 }

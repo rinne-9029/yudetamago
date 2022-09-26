@@ -74,7 +74,7 @@ void Init(void)
 	ADD_RESOURCE("Sky", CImage::CreateImage("Image/Sky.png"));
 	ADD_RESOURCE("Trap",CImage::CreateImage("Image/trap.png"));
 	ADD_RESOURCE("Trap2",CImage::CreateImage("Image/Off.png"));
-	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
+	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title2.png"));
 	ADD_RESOURCE("Goal", CImage::CreateImage("Image/Goal.png"));
 	//Base::Add(new Player(CVector2D(200,500),false));
 
