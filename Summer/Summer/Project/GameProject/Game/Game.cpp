@@ -15,15 +15,27 @@ Game::Game() :Base(eType_Scene)
 	//Base::Add(new Enemy(CVector2D(1280 + 256 * 3, 540), true));
 	Base::Add(new Goal(CVector2D(3000, 540)));
 	Base::Add(new Trap(CVector2D(400, 540),true));
-	Base::Add(new Trap(CVector2D(420, 540), true));
-	Base::Add(new Trap(CVector2D(460, 540), true));
-	Base::Add(new Trap(CVector2D(500, 540), true));
-	Base::Add(new Trap(CVector2D(600, 540), true));
-	Base::Add(new Trap(CVector2D(700, 540), true));
-	Base::Add(new Trap(CVector2D(750, 540), true));
-	Base::Add(new Trap2(CVector2D(700, 450), true));
-	
-
+	Base::Add(new Trap(CVector2D(650, 540), true));
+	Base::Add(new Trap(CVector2D(890, 540), true));
+	Base::Add(new Trap(CVector2D(1250, 540), true));
+	Base::Add(new Trap(CVector2D(1950, 540), true));
+	Base::Add(new Trap(CVector2D(2240, 540), true));
+	Base::Add(new Trap(CVector2D(2770, 540), true));
+	Base::Add(new Trap(CVector2D(2800, 540), true));
+	Base::Add(new Trap(CVector2D(2850, 540), true));
+	Base::Add(new Trap2(CVector2D(700, 470), true));
+	Base::Add(new Trap2(CVector2D(1300, 480), true));
+	Base::Add(new Trap2(CVector2D(1600, 419), true));
+	Base::Add(new Trap2(CVector2D(1650, 419), true));
+	Base::Add(new Trap2(CVector2D(1700, 419), true));
+	Base::Add(new Trap2(CVector2D(1750, 419), true));
+	Base::Add(new Trap2(CVector2D(2240, 480), true));
+	Base::Add(new Trap2(CVector2D(2250, 480), true));
+	Base::Add(new Trap2(CVector2D(2260, 480), true));
+	Base::Add(new Trap2(CVector2D(2500, 500), true));
+	Base::Add(new Trap2(CVector2D(2500, 265), true));
+	Base::Add(new Trap2(CVector2D(2500, 270), true));
+	Base::Add(new Trap2(CVector2D(2500, 275), true));
 }
 
 Game::~Game()
